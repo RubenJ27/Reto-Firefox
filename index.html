@@ -99,7 +99,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="originals/firefox_logo-only_RGB-400w.png" alt="Logo">
+      <img src="originals/firefox_logo-only_RGB.png" alt="Logo">
 
     </header>
 
@@ -125,10 +125,18 @@
                 src="originals/fireox_logo-only_RGB-400w.png" alt="Descarga Firefox">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="originals/mozilla-dinosaur-head.png" alt="Explora Firefox">
+          <img  srcset="originals/mozilla-dinosaur-head-120w 120w,
+                        originals/mozilla-dinosaur-head-400w 400w"
+                sizes="(max-width: 500px) 120px,
+                        400px" 
+                src="originals/mozilla-dinosaur-head-400w.png" alt="Explora Firefox">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="originals/firefox-addons.jpg" alt="Complementos para firefox">
+          <img  srcset="originals/firefox-addons-120w 120w,
+                         originals/firefox-addons-400w 400w"
+                 sizes="(max-width: 500px) 120px,
+                        400px" 
+                 src="originals/firefox-addons.jpg" alt="Complementos para firefox">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img src="originals/mdn.svg" alt="Recursos para desarrolladores, por desarrolladores.">
@@ -137,7 +145,12 @@
       </div>
 
       <div class="red-panda">
-        <img src="originals/red-panda.jpg" alt="">
+        <picture>
+          <source media="(max-width: 600px)" srcset="originals/red-panda-600w.jpg">
+          <source media="(min-width: 601px)" srcset="originals/red-panda.jpg">
+          <img src="originals/red-panda.jpg" alt="Zorro Firefox">
+        </picture>
+        
       </div>
 
     </main>
