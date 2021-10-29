@@ -99,9 +99,7 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img srcset="firefox_logo-only_RGB-120w.jpg 120w"
-           sizes="(max-width: 500px) 120px"
-           src="originals/firefox_logo-only_RGB-1200w.png" alt="Logo">
+      <img src="originals/firefox_logo-only_RGB-400w.png" alt="Logo">
 
     </header>
 
@@ -120,7 +118,11 @@
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="originals/firefox_logo-only_RGB.png" alt="Descarga Firefox">
+          <img srcset="originals/firefox_logo-only_RGB-120w.png 120w,
+                        originals/firefox_logo-only_RGB-400w.png 400w"
+                sizes="(max-width: 500px) 120px,
+                        400px"
+                src="originals/fireox_logo-only_RGB-400w.png" alt="Descarga Firefox">
         </a>
         <a href="https://www.mozilla.org/">
           <img src="originals/mozilla-dinosaur-head.png" alt="Explora Firefox">
